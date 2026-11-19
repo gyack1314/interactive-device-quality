@@ -1,0 +1,137 @@
+{
+  "schema_version": 2,
+  "synthetic": true,
+  "project": "异质体验暴露下的设备质量信号与复测分配",
+  "tables": [
+    {
+      "file": "fixtures/devices.jsonl",
+      "rows": 80,
+      "sha256": "265e1140b73d486646c0bcf9df796bf82b24d839de41988fc799ba8b8f6ae2af",
+      "columns": [
+        "batch",
+        "consent",
+        "device_id",
+        "model",
+        "retest_minutes",
+        "retest_skill",
+        "row_id",
+        "venue"
+      ],
+      "unique_key": [
+        "row_id"
+      ]
+    },
+    {
+      "file": "fixtures/device_states.jsonl",
+      "rows": 80,
+      "sha256": "5da60fab893a24790ade301b4893a4085ec86ce52af7fec3e9520abcd41a8e65",
+      "columns": [
+        "device_id",
+        "end_day",
+        "firmware",
+        "part",
+        "row_id",
+        "start_day"
+      ],
+      "unique_key": [
+        "row_id"
+      ]
+    },
+    {
+      "file": "fixtures/sessions.jsonl",
+      "rows": 3200,
+      "sha256": "c75bf0ae5f7d27d40db07aacab89d923df1d3d9a9ad99d2f404a10ab936acfc9",
+      "columns": [
+        "capture_complete",
+        "day",
+        "device_id",
+        "duration_seconds",
+        "row_id",
+        "session_id",
+        "venue",
+        "visible"
+      ],
+      "unique_key": [
+        "row_id"
+      ]
+    },
+    {
+      "file": "fixtures/alerts.jsonl",
+      "rows": 340,
+      "sha256": "21059feeed70e549efb892bc579cabd41b4ff31cf21a5ec28d1cdb40f260d79f",
+      "columns": [
+        "alert_id",
+        "occurred_second",
+        "row_id",
+        "session_id",
+        "symptom"
+      ],
+      "unique_key": [
+        "row_id"
+      ]
+    },
+    {
+      "file": "fixtures/environment.jsonl",
+      "rows": 2,
+      "sha256": "932af408b265cb1438b71f2c055d48f3b2a985ddb4d5e31c7c8d4d601794ae57",
+      "columns": [
+        "cause",
+        "confirmed",
+        "end_day",
+        "environment_id",
+        "row_id",
+        "start_day",
+        "venue"
+      ],
+      "unique_key": [
+        "row_id"
+      ]
+    },
+    {
+      "file": "fixtures/repairs.jsonl",
+      "rows": 1,
+      "sha256": "402ebd060e9dc8a008c0e74b79ef2f6a278e441d6d9f7011534f3a5fd6f1cc8c",
+      "columns": [
+        "day",
+        "device_id",
+        "firmware",
+        "part",
+        "repair_id",
+        "row_id"
+      ],
+      "unique_key": [
+        "row_id"
+      ]
+    },
+    {
+      "file": "fixtures/retest_receipts.jsonl",
+      "rows": 1,
+      "sha256": "fa44553517d521dcb1655766824e56d6f0f5cdc9f17a17149c61c8f6ed3b214e",
+      "columns": [
+        "day",
+        "device_id",
+        "result",
+        "retest_id",
+        "row_id"
+      ],
+      "unique_key": [
+        "row_id"
+      ]
+    },
+    {
+      "file": "fixtures/capacity.jsonl",
+      "rows": 2,
+      "sha256": "75fdacd5466e2687cfd5ed235e05dbb8abcb5d2843e301efecec155955f412eb",
+      "columns": [
+        "day",
+        "minutes",
+        "row_id",
+        "skill"
+      ],
+      "unique_key": [
+        "row_id"
+      ]
+    }
+  ],
+  "scope": "本地合成的原始来源观察、业务政策与操作请求。"
+}

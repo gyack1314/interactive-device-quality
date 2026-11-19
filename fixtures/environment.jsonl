@@ -1,0 +1,2 @@
+{"row_id":"environment:000001","environment_id":"ENV1","venue":"V1","start_day":"2026-10-10","end_day":"2026-10-13","cause":"network","confirmed":true}
+{"row_id":"environment:000002","environment_id":"ENV2","venue":"V2","start_day":"2026-10-12","end_day":"2026-10-14","cause":"network","confirmed":false}

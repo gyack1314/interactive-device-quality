@@ -68,9 +68,6 @@
       "at": "2026-11-18"
     }
   ],
-  "facts": {
-    "devices": 12,
-    "venues": 3,
-    "firmware_versions": 2
-  }
+  "facts": {},
+  "observed_record_count": 6
 }
